@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mLocationClient.registerLocationListener(new MyLocationListener());
         setContentView(R.layout.activity_main);
         positionText = (TextView) findViewById(R.id.position_text_view);
-        List<String> permissionList = new ArrayList<>();
+       List<String> permissionList = new ArrayList<>();
         if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
             permissionList.add(Manifest.permission.ACCESS_FINE_LOCATION);
         }
